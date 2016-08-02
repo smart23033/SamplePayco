@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_my_info"
+        android:title="my_info"
+        android:icon="@drawable/menu_my_info"
+        android:orderInCategory="100"
+        android:checkable="false"
+        />
+
+    <item
+        android:id="@+id/menu_payco_point"
+        android:title="payco_point"
+        android:orderInCategory="101"
+        />
+
+    <item
+        android:id="@+id/menu_my_coupon"
+        android:title="my_coupon"
+        android:orderInCategory="102"
+        />
+
+    <item
+        android:id="@+id/menu_my_stamp"
+        android:title="my_stamp"
+        android:orderInCategory="103"
+        />
+
+    <item
+        android:id="@+id/menu_register_code"
+        android:title="register_code"
+        android:orderInCategory="104"
+        />
+
+    <item
+        android:id="@+id/menu_payment_setting"
+        android:title="payment_setting"
+        android:icon="@drawable/menu_my_info"
+        android:orderInCategory="200"
+        android:checkable="false"
+        />
+
+    <item
+        android:id="@+id/menu_payment_password"
+        android:title="payment_password"
+        android:orderInCategory="201"
+        />
+
+    <item
+        android:id="@+id/menu_payment_method"
+        android:title="payment_method"
+        android:orderInCategory="202"
+        />
+
+    <item
+        android:id="@+id/menu_payco_tmoney"
+        android:title="payco_tmoney"
+        android:orderInCategory="203"
+        />
+
+    <item
+        android:id="@+id/menu_refund_account"
+        android:title="refund_account"
+        android:orderInCategory="204"
+        />
+
+    <item
+        android:id="@+id/menu_income_deduction"
+        android:title="income_deduction"
+        android:orderInCategory="205"
+        />
+
+</menu>
