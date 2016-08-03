@@ -26,7 +26,7 @@ public class MyAdapter extends RecyclerView.Adapter<TextViewHolder> {
 
     @Override
     public TextViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(android.R.layout.simple_list_item_1,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view,parent,false);
         return new TextViewHolder(view);
     }
 

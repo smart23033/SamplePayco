@@ -12,7 +12,7 @@ public class TextViewHolder extends RecyclerView.ViewHolder{
 
     public TextViewHolder(View itemView) {
         super(itemView);
-        textView = (TextView)itemView;
+        textView = (TextView)itemView.findViewById(R.id.cv_text_message);
     }
 
     public void setText(String text) {

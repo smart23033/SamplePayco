@@ -3,6 +3,9 @@ package org.androidtown.samplepayco;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,15 +54,29 @@ public class MainFragment extends Fragment {
         }
     }
 
+    RecyclerView listView;
+    MyAdapter mAdapter;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_main, container, false);
-        TextView tv = (TextView)view.findViewById(R.id.text_message);
-        tv.setText(message);
+       listView = (RecyclerView)view.findViewById(R.id.rv_list);
+        mAdapter = new MyAdapter();
+        listView.setAdapter(mAdapter);
+
+        LinearLayoutManager manager = new LinearLayoutManager(getContext());
+        listView.setLayoutManager(manager);
+
+        initData();
 
         return view;
+    }
+
+    private void initData(){
+        String item = "item 1";
+        mAdapter.add(item);
     }
 
     @Override
